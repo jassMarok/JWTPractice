@@ -35,6 +35,15 @@ namespace JWTPractice
                 UserInfoId = 1
             });
 
+            modelBuilder.Entity<Product>().HasData(new Product
+            {
+                AvailableQuantity = 20,
+                Category = "Toys",
+                Color = "Red",
+                Name = "Avenger",
+                ProductId = 1,
+                UnitPrice = 22.40M,
+            });
         }
     }
 }
